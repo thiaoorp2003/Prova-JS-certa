@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio2</title>
+</head>
+<body>
+    <script>
+        var  segundos, h, m, s;
+
+
+        h = prompt("coloque a hora de agora: ");
+        h = eval(h);
+
+        m = prompt("coloque os minutos de agora: ");
+        m = eval(m);
+
+        s = prompt("coloque os segundos de agora: ");
+        s = eval(s);
+
+        h *= 60;
+        h *= 60;
+        m *= 60;
+
+        segundos = (h + m + s);
+
+        document.write(segundos + " segundos");
+
+    </script>
+</body>
+</html>

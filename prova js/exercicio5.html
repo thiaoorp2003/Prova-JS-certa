@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio5</title>
+</head>
+<body>
+    <script>
+        nome = String(prompt("Qual seu nome"));
+
+        var hotDog = 1.00;
+        var hamburguer = 1.30;
+        var cheesBurguer = 1.50;
+        var refrigerante = 1.00;
+        var fritas =  0.80;
+
+        var qtdHotDog, qtdHamburguer, qtdCheesBrguer, qtdRefrigerante, qtdFritas;
+
+        qtdHotDog = prompt("qual a quantidade de HotDog voce vai querer?");
+        qtdHotDog = eval(qtdHotDog);
+
+        qtdHamburguer = prompt("qual a quantidade de hamburguer voce vai querer?");
+
+        qtdCheesBrguer = prompt("qual a quantidade de cheesBurguer voce vai querer?");
+        qtdCheesBrguer = eval(qtdCheesBrguer);
+
+        qtdRefrigerante = prompt("qual a quantidade de refrigerante voce vai querer?");
+        qtdRefrigerante = eval(qtdRefrigerante);
+
+        qtdFritas = prompt("qual a quantidade de batatas voce vai querer?");
+        qtdFritas = eval(qtdFritas);
+
+        var p1, p2, p3, p4, p5, totalPedido;
+
+        p1 = hotDog * qtdHotDog;
+        p2 = hamburguer * qtdHamburguer;
+        p3 = cheesBurguer * qtdCheesBrguer;
+        p4 = refrigerante * qtdRefrigerante;
+        p5 = fritas*qtdFritas;
+
+        totalPedido = (p1 + p2 + p3 + p4 + p5);
+
+        document.write(nome + "<br>");
+        document.write("O total do seu pedido foi: R$ " + totalPedido);
+
+    </script>
+</body>
+</html>

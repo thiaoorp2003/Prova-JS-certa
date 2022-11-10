@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio4</title>
+</head>
+<body>
+    <script>
+        nome = String(prompt("Informe seu nome aqui:"));
+        banco = String(prompt("informe o seu banco aqui:"));
+
+        var numeroDaConta, chequesDebitar, saldoAtual, limiteDoCredito, saldoDisponivel , valorDoCredito, saldoFinal;
+
+        numeroDaConta = prompt("informe o número da sua conta aqui:");
+        numeroDaConta = eval(numeroDaConta);
+
+        chequesDebitar = prompt("informe o valor do débito da sua conta aqui:");
+        chequesDebitar = eval(chequesDebitar);
+
+        saldoAtual = prompt("informe valor em dinheiro que tem na sua conta aqui:");
+        saldoAtual = eval(saldoAtual);
+
+        valorDoCredito = prompt("informe o valor a creditar na sua conta aqui:");
+        valorDoCredito = eval(valorDoCredito);
+
+        limiteDoCredito = prompt("informe o limite do crédito aqui:");
+        limiteDoCredito = eval(limiteDoCredito);
+
+        saldoFinal = saldoAtual + valorDoCredito;
+
+        (saldoDisponivel = (saldoFinal + limiteDoCredito ) - chequesDebitar);
+
+        document.write(nome + "<br>");
+        document.write(banco + "<br>");
+        document.write(numeroDaConta + "<br>");
+
+        document.write("R$" + saldoDisponivel);
+
+    </script>
+</body>
+</html>
